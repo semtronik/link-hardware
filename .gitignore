@@ -1,0 +1,21 @@
+# .gitignore — link-hardware (repository root)
+#
+# Scope: environment noise only — editors, OS, local tooling.
+#
+# Per-artifact rules (KiCad volatiles, fab-branded outputs) live in the
+# artifact's own .gitignore, so that any artifact folder stays self-contained
+# and could be extracted into a standalone repository without losing them.
+
+# ── Editors / local history ─────────────────────────────────────────────────
+# VS Code Local History extension
+.history/
+.vscode/
+.idea/
+
+# ── OS ──────────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Obsidian config, in case the repo is ever opened as a vault
+.obsidian/

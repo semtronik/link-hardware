@@ -1,0 +1,8 @@
+"Reference","Quantity","Description","Manufacturer","Manufacturer PN","DNP","Notes"
+"C1","1","Capacitor, 10uF, 25V, X5R, 0805","Samsung","CL21A106KAYNNNE","",""
+"C2","1","Capacitor, 0.1uF, 50V, X7R, 0603","Yageo","CC0603KRX7R9BB104","",""
+"J1,J3","2","Connector, Header, 1x8, 2.54mm, Vertical , TH","Wurth","61300811821","DNP",""
+"J2","1","Connector, Header, 2x10, 2mm, Vertical, TH","GCT","BF050-20-A-B-0400-0300-L-G","",""
+"R1,R2,R3","3","Resistor,10k, 1%, 0.1W, 0603","Yageo","RC0603FR-0710KL","",""
+"R4,R5,R6,R7","4","Resistor, 0R, 0805","Yageo","RC0805FR-070RL","DNP",""
+"U1","1","IC, RF, Lora, SMD","SeedStudio","wio-sx1262","",""

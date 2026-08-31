@@ -1,0 +1,46 @@
+# .gitignore — KiCad board artifact
+#
+# Kept inside the artifact folder so it stays self-contained: this folder
+# could be extracted into a standalone repository and keep its rules.
+#
+# Committed here: design sources, and outputs/ holding the fab-agnostic
+# exports of the last freeze (schematic PDF, BOM, position, gerbers, drill,
+# STEP). `main` only ever carries manufactured and validated revisions, so
+# those exports are in sync with the sources by construction.
+
+# ── Fab-branded outputs ─────────────────────────────────────────────────────
+# Vendor plugin folders and their databases. Generic gerbers belong in
+# outputs/, never under a vendor name.
+jlcpcb/
+*.db
+
+# ── KiCad — volatile / local files ──────────────────────────────────────────
+# Per-machine display settings (layer visibility, zoom...)
+*.kicad_prl
+# Open-project lock markers
+*.lck
+~*.lck
+# Automatic backups
+*-backups/
+_autosave-*
+\#auto_saved_files\#
+*.kicad_sch-bak
+*.kicad_pcb-bak
+*.sch-bak
+*.bak
+*.bck
+*.000
+*.tmp
+*~
+*-save.pro
+*-save.kicad_pcb
+# Symbol/footprint caches
+# (fp-lib-table and sym-lib-table ARE committed: project configuration)
+fp-info-cache
+*-cache.lib
+*-rescue.lib
+*-rescue.kicad_sym
+# Intermediate exports, regenerated on demand
+*.net
+*.dsn
+*.ses
