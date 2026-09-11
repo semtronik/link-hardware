@@ -2,8 +2,7 @@
 
 Base board of the **Link** platform: MCU, display, power and battery
 management. It carries no field interface of its own — that is the job of the
-interface module it hosts, which makes the same base a Link-LR, a Link-485, or
-whatever comes next.
+interface module it hosts, which makes the same base a Link-LR or a Link-485.
 
 Part of [`link-hardware`](../../README.md). See the repository README for
 naming, versioning and release conventions.
