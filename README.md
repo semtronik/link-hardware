@@ -6,8 +6,12 @@ enclosure.
 
 | Product | Interface | Status |
 |---|---|---|
-| **Link-LR** | LoRa P2P, 868/915 MHz | first product, in development |
+| **Link-LR** | LoRa P2P, 868/915 MHz | first product |
 | **Link-485** | RS485 | planned |
+
+> **Current revisions** — base board `0.2.0`, LoRa module `0.2.0`,
+> enclosure `0.1.0`. Both boards are validated on the bench; the enclosure
+> sources are those of the first print.
 
 This repository holds the design sources. The desktop application lives in
 [`link-studio`](https://github.com/semtronik/link-studio), the device firmware
@@ -21,7 +25,7 @@ product overview and device↔app protocol in
 board/
 ├── link-base-brd/      base board: MCU, display, power
 └── link-mod-lr-brd/    LoRa interface module
-mechanical/             enclosure and front faces
+mechanical/             enclosure
 ```
 
 Each artifact folder is self-contained — sources, its own `.gitignore`, and
@@ -29,7 +33,7 @@ its `outputs/` — so it could be extracted into a standalone repository
 without losing anything.
 
 Top-level folders name a **discipline**, not an artifact type: one discipline
-produces several types (`mechanical/` holds both enclosures and front faces).
+can produce several types (`mechanical/` will also hold the front faces).
 Folder names are free to change; the tokens in file names are not.
 
 ## Setup
@@ -58,7 +62,8 @@ link-<artifact>[-<variant>]-<type>
 | `-face` | PET front face (artwork + cutting) |
 
 So `link-mod-lr-brd` is the LoRa interface module board, and
-`link-case-lr-v0.2.0.step` is version 0.2.0 of the LR enclosure.
+`link-case-top-v0.1.0.step` is the top half of version 0.1.0 of the
+enclosure.
 
 ## Versions
 
@@ -103,7 +108,8 @@ hold.
 Published releases carry the same files, attached to the freeze tag:
 
 ```
-link-base-brd/v0.1.0
+link-base-brd/v0.2.0
+link-mod-lr-brd/v0.2.0
 ```
 
 Fab-branded exports (vendor plugin folders) are never committed and never
