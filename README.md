@@ -1,5 +1,7 @@
 # link-hardware
 
+![Link-LR with the cover off: base board, LoRa module plugged on top, 18650 cell](https://raw.githubusercontent.com/semtronik/link/main/link-lr/images/link-lr_interieur.jpg)
+
 Hardware design sources for the **Link** platform: a common ESP32-S3 base
 board paired with interchangeable interface modules, in a shared MJF
 enclosure.
